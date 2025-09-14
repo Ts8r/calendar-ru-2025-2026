@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Календарь 2025–2026 (русский)</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Librairie pour générer le .docx (ok en ligne via GitHub Pages) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/docx/8.3.2/docx.umd.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="top">
+    <h1>Календарь на 2025 и 2026 годы</h1>
+    <div class="controls">
+      <button id="downloadWord" type="button">📥 Скачать для Word</button>
+      <noscript>Для загрузки .docx включите JavaScript.</noscript>
+    </div>
+  </header>
 
+  <main>
+    <section class="year" aria-label="Календарь 2025 года">
+      <h2>2025 год</h2>
+      <div class="grid" id="grid-2025"></div>
+    </section>
+
+    <section class="year pagebreak" aria-label="Календарь 2026 года">
+      <h2>2026 год</h2>
+      <div class="grid" id="grid-2026"></div>
+    </section>
+  </main>
+
+  <footer class="note">
+    Неделя начинается с понедельника. Таблицу можно распечатать или
+    скопировать в Word. Кнопка выше создаёт файл .docx автоматически.
+  </footer>
+</body>
+</html>
